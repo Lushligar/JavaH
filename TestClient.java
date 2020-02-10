@@ -1,0 +1,13 @@
+package tp1;
+
+public class TestClient {
+	// Exercice 1.4
+	public static void main(String[] args) {
+		
+		Client client1 = new Client("Golay", "Jerry", null);
+		System.out.println("Le nom, prénom et numéro du client sont : " + client1.getNom() + " " + client1.getPrenom() );	
+		Client client2 = new Client("Celère", "Jaqcues",null);
+		System.out.println("Le nom, prénom et numéro du client sont : " + client2.getNom() + " " + client2.getPrenom() + " " + client2.getCompteCourant() );
+	}
+
+}
