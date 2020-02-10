@@ -17,6 +17,8 @@ public class Client {
 	 public Client(String nom,String prenom,Compte compte) {
 		 this.nom = nom;
 		 this.prenom = prenom;
+		 
+		// Exercice 3.1
 		 this.compteCourant = compte ;
 		 
 		 // Exercice 3.0
@@ -42,17 +44,19 @@ public class Client {
 		return prenom;
 	}
 	
+	// Exercice 3.3
 	
-	public double getSolde() {
+	 public double getSolde() {
 		return compteCourant.getSolde();
 	}
-
-	public void afficherSolde( ) {
-		System.out.println();
+	 
+	public void afficherSolde() {
+		System.out.println("La solde du client " + getPrenom() + " " + getNom() + " est : " + getSolde() );
 	}
+	 
 
-	public String getCompteCourant() {
-		return ;
+	public Compte getCompteCourant() {
+		return compteCourant;
 	}
 
 	

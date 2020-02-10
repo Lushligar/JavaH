@@ -27,6 +27,12 @@ public class MaBanque {
 		String retrait3 = c2.retrait(700);
 		System.out.println( retrait3 + "Nouveau Solde : " + c2.getSolde() );
 		
+		// Exercice 3.4
+		
+		
+		Client client1 = new Client("Marc","Lavoine",c2);
+		client1.afficherSolde();
+		
 		
 	}
 }
